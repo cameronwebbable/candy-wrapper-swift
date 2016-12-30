@@ -10,6 +10,7 @@
 		EEA295701E16C523007FCA48 /* CandyWrapperSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA295661E16C522007FCA48 /* CandyWrapperSwift.framework */; };
 		EEA295751E16C523007FCA48 /* CandyWrapperSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA295741E16C523007FCA48 /* CandyWrapperSwiftTests.swift */; };
 		EEA295771E16C523007FCA48 /* CandyWrapperSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = EEA295691E16C522007FCA48 /* CandyWrapperSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEA295811E16C8D9007FCA48 /* CandyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA295801E16C8D9007FCA48 /* CandyWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		EEA2956F1E16C523007FCA48 /* CandyWrapperSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandyWrapperSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA295741E16C523007FCA48 /* CandyWrapperSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandyWrapperSwiftTests.swift; sourceTree = "<group>"; };
 		EEA295761E16C523007FCA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA295801E16C8D9007FCA48 /* CandyWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				EEA295691E16C522007FCA48 /* CandyWrapperSwift.h */,
 				EEA2956A1E16C522007FCA48 /* Info.plist */,
+				EEA295801E16C8D9007FCA48 /* CandyWrapper.swift */,
 			);
 			path = CandyWrapperSwift;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					EEA295651E16C522007FCA48 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 62ZR6BVVR6;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					EEA2956E1E16C523007FCA48 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA295811E16C8D9007FCA48 /* CandyWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		EEA2957B1E16C523007FCA48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 62ZR6BVVR6;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.webbengineer.CandyWrapperSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		EEA2957C1E16C523007FCA48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 62ZR6BVVR6;
@@ -360,6 +368,7 @@
 		EEA2957E1E16C523007FCA48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 62ZR6BVVR6;
 				INFOPLIST_FILE = CandyWrapperSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		EEA2957F1E16C523007FCA48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 62ZR6BVVR6;
 				INFOPLIST_FILE = CandyWrapperSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
