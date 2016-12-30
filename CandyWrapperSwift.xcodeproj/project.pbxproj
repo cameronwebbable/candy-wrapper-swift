@@ -77,7 +77,8 @@
 				EEA2956A1E16C522007FCA48 /* Info.plist */,
 				EEA295801E16C8D9007FCA48 /* CandyWrapper.swift */,
 			);
-			path = CandyWrapperSwift;
+			name = CandyWrapperSwift;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		EEA295731E16C523007FCA48 /* CandyWrapperSwiftTests */ = {
@@ -86,7 +87,8 @@
 				EEA295741E16C523007FCA48 /* CandyWrapperSwiftTests.swift */,
 				EEA295761E16C523007FCA48 /* Info.plist */,
 			);
-			path = CandyWrapperSwiftTests;
+			name = CandyWrapperSwiftTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
